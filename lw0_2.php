@@ -4,7 +4,7 @@ function sumTime(string $timeFirst, string $timeSecond): string
 {
     $firstMassive = [];
     $secondMassive = [];
-    $arrZnaki = ['?', '/', '_', '$' . '=', '%', '@', '!', '#', '^', '&', '*'];
+    $arrZnaki = ['?', '/', '_', '$', '=', '%', '@', '!', '#', '^', '&', '*'];
     $arrFirst = str_split($timeFirst);
     $arrSecond = str_split($timeSecond);
     $arrLength = count(array_merge($arrFirst, $arrSecond));
