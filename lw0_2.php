@@ -37,5 +37,3 @@ function sumTime(string $timeFirst, string $timeSecond): string
     return $firstSumm . ":" . $secondSumm . ":" . $thirdSumm;
 }
 echo sumTime("2%42@:4@53$:125^3$", "2%42@:4@53$:125^3$");
-
-?>

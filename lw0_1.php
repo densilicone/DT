@@ -7,13 +7,16 @@ function calculator(string $counter): int
     $arraiLength = count($arrai);
 
     for ($i = 0; $i < $arraiLength; $i++) {
+          
         if (in_array($arrai[$i], $signsArrai)) {
             unset($arrai[$i]);
         }
+        if(isset($error_result)) {
+            echo "Ошибка: $error_result";
+         }  
     }
+    
     $arraiNew = implode($arrai);
     return eval("return $arraiNew;");
 }
-echo calculator('12@4+1#75?/5-2');
-
-?>
+echo calculator('12@4+1#7a5?/5-2');
