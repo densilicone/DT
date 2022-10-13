@@ -11,9 +11,6 @@ function calculator(string $counter): int
         if (in_array($arrai[$i], $signsArrai)) {
             unset($arrai[$i]);
         }
-        if(isset($error_result)) {
-            echo "Ошибка: $error_result";
-         }  
     }
     
     $arraiNew = implode($arrai);
